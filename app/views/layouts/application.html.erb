@@ -10,17 +10,17 @@
   </head>
 
   <body>
-
+    <% if user_signed_in? %>
       <nav class="navbar  bg-secondary">
               <%=link_to"Note App",notes_path,class: "navbar-brand text-white"%>
       <div class="d-flex flex-nowrap ">
               <%= link_to "ノートを作る", new_note_path, class: "nav-link text-white "%><i class="fas fa-book-open text-white d-flex align-items-center mr-5"></i>
-
+              <%= link_to "ログアウト",destroy_user_session_path, class: "nav-link text-white ", method: :delete %>
 
         </ul>
       </div>
     </nav>
-
+  <%end%>
         <% if flash[:notice] %>
           <div class="alert alert-success" role="alert">
             <%= flash[:notice] %>
