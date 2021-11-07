@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Learn App</title>
+    <title>Note App</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -12,7 +12,7 @@
   <body>
 
       <nav class="navbar  bg-secondary">
-              <%=link_to"Learn App",notes_path,class: "navbar-brand text-white"%>
+              <%=link_to"Note App",notes_path,class: "navbar-brand text-white"%>
       <div class="d-flex flex-nowrap ">
               <%= link_to "ノートを作る", new_note_path, class: "nav-link text-white "%><i class="fas fa-book-open text-white d-flex align-items-center mr-5"></i>
 
