@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>NoteApp</title>
+    <title>Learn App</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+
+      <nav class="navbar  bg-secondary">
+              <%=link_to"Learn App",notes_path,class: "navbar-brand text-white"%>
+      <div class="d-flex flex-nowrap ">
+              <%= link_to "ノートを作る", new_note_path, class: "nav-link text-white "%><i class="fas fa-book-open text-white d-flex align-items-center mr-5"></i>
+
+
+        </ul>
+      </div>
+    </nav>
+
+        <% if flash[:notice] %>
+          <div class="alert alert-success" role="alert">
+            <%= flash[:notice] %>
+          </div>
+        <% end %>
+        <%if flash[:alert]%>
+          <div class="alert alert-danger" role="alert">
+            <%= flash[:alert]%>
+          </div>
+        <% end %>
     <%= yield %>
+
   </body>
 </html>
