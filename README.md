@@ -17,6 +17,6 @@
 Web系のバックエンドの職種志望のためRuby on Railsを選びました。
 そもそもRubyを選んだ理由は日本ではRubyの方が扱っている会社が多く、日本人が作った言語のためコミュニティーが盛んでエラーの記事も多く解決しやすと考え選びました。
 
-*URL
+* URL
 
 https://peaceful-lowlands-98059.herokuapp.com/
