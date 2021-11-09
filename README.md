@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* アプリの概要
 
-Things you may want to cover:
+ 自分の知っている知識やアウトプットしたいことをノートにして投稿できるアプリケーションです
 
-* Ruby version
+* 制作の背景・理由
 
-* System dependencies
+ 大学の友達がノートにしてみんなで共有できるアプリが欲しいといっていたので作りました。
+ 
+* どんな機能を実装したか
 
-* Configuration
+ crud機能、ページネーション機能、ログイン機能
+ 
+* 技術選定理由
 
-* Database creation
+Web系のバックエンドの職種志望のためRuby on Railsを選びました。
+そもそもRubyを選んだ理由は日本ではRubyの方が扱っている会社が多く、日本人が作った言語のためコミュニティーが盛んでエラーの記事も多く解決しやすと考え選びました。
 
-* Database initialization
+*URL
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+https://peaceful-lowlands-98059.herokuapp.com/
